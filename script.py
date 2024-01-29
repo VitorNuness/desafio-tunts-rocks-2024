@@ -54,16 +54,18 @@ def main():
         description="This script reads data from a Google Spreadsheet, analyzes the data, and writes the student's situation."
     )
     parser.add_argument("client_key", help="A JSON file with your credentials.")
+    parser.add_argument("sheet_id", help="A Google Spreadsheet id.")
+    parser.add_argument("sheet_name", help="A name of spreadsheed.")
     args = parser.parse_args()
 
     try:
         credentials_file = read_credentials_file(args.client_key)
-        spreadsheet_id = '1guQdTjGwhKVkvHQ8Tp4AKztrAkngcWPYX1EiC0E8bpI'
-        file_key = 'atlantean-bot-412521-ac98403fd1cb.json'
+        spreadsheet_id = args.sheet_id
+        file_key = args.client_key
 
         client = GoogleSheetsClient(credentials_file, spreadsheet_id, file_key)
 
-        worksheet_name = 'engenharia_de_software'
+        worksheet_name = args.sheet_name
         data = client.read_data(worksheet_name)
 
         total_classes = int(data[1][0][-2::])
@@ -78,7 +80,7 @@ def main():
             student_row[6] = student.situation
             student_row[7] = student.final_situation
 
-        client.write_data(worksheet_name, data)
+        # client.write_data(worksheet_name, data)
 
         print("The process has been finished. Please check the Spreadsheet.")
     except FileNotFoundError as e:

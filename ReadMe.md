@@ -15,7 +15,7 @@ python --version
 - **gspread 6.0.0**: Python API for Google Sheets
 
 ```bash
-pip install gspread
+pip install -r requirements.txt
 ```
 
 - Credentials JSON file with proper Google Sheets API access. [How To Get Credentials](#how-to-obtain-google-sheets-api-credentials)
