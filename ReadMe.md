@@ -27,7 +27,7 @@ mkdir <dir_name>
 cd <dir_name>
 git init
 git remote add origin
-python script.py <client_key>
+python script.py <client_key> <spreadsheet_id> <sheet_name>
 ```
 
 * <client_key>: Path to a JSON file containing Google Sheets API credentials.
@@ -39,7 +39,7 @@ mkdir tunts-rocks
 cd tunts-rocks
 git init
 git remote add origin
-python script.py path/to/your/credentials.json
+python script.py path/to/your/credentials.json spreadsheetid sheet_name
 ```
 ## How to Obtain Google Sheets API Credentials
 
