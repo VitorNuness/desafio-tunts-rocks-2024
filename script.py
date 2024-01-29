@@ -80,7 +80,7 @@ def main():
             student_row[6] = student.situation
             student_row[7] = student.final_situation
 
-        # client.write_data(worksheet_name, data)
+        client.write_data(worksheet_name, data)
 
         print("The process has been finished. Please check the Spreadsheet.")
     except FileNotFoundError as e:
