@@ -65,7 +65,7 @@ class Student:
             self.average = 0
             return self.average
         
-        self.average = ceil(sum(self.grades) / (len(self.grades)) + 1)
+        self.average = ceil(sum(self.grades) / (len(self.grades) + 1))
         return self.average
 
     def calculate_percentual_absences(self, classes_total: int) -> int:

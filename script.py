@@ -1,20 +1,22 @@
 """
-Tunts Rocks 2024 Student Analysis Script
+Challenge Tunts Rocks 2024
 
 This script reads data from a Google Spreadsheet, analyzes the data, and updates the student's situation based on attendance and grades.
 
 Usage:
-    python script.py <client_key>
+    python script.py <client_key> <spreadsheet_id> <sheet_name>
 
 Arguments:
     client_key (str): Path to a JSON file containing Google Sheets API credentials.
+    spreadsheet_id (str): The Google Spreadsheet ID, localized in URL.
+    sheet_name (str): The name of sheet.
 
 Requirements:
     - gspread: Python API for Google Sheets
     - Credentials JSON file with proper Google Sheets API access
 
 Example:
-    python script.py path/to/your/credentials.json
+    python script.py path/to/your/credentials.json yourspreadsheetid sheet_name
 
 """
 

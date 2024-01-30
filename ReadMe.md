@@ -1,6 +1,7 @@
-# Chalenge Tunts Rocks 2024
+# Challenge Tunts Rocks 2024
 
 This script analyzes student data from a Google Spreadsheet and updates their situation based on attendance and grades.
+[Google Spreadsheet](https://docs.google.com/spreadsheets/d/1guQdTjGwhKVkvHQ8Tp4AKztrAkngcWPYX1EiC0E8bpI/edit#gid=0)
 
 ## Requirements
 
@@ -31,6 +32,8 @@ python script.py <client_key> <spreadsheet_id> <sheet_name>
 ```
 
 * <client_key>: Path to a JSON file containing Google Sheets API credentials.
+* <spreadsheet_id>: The Google Spreadsheet ID, localized in URL.
+* <sheet_name>: The name of sheet.
 
 ## Example
 
@@ -39,7 +42,7 @@ mkdir tunts-rocks
 cd tunts-rocks
 git init
 git remote add origin
-python script.py path/to/your/credentials.json spreadsheetid sheet_name
+python script.py path/to/your/credentials.json yourspreadsheetid sheet_name
 ```
 ## How to Obtain Google Sheets API Credentials
 
