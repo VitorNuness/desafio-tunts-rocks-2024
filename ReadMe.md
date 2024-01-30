@@ -1,7 +1,7 @@
 # Challenge Tunts Rocks 2024
 
 This script analyzes student data from a Google Spreadsheet and updates their situation based on attendance and grades.
-[Google Spreadsheet](https://docs.google.com/spreadsheets/d/1guQdTjGwhKVkvHQ8Tp4AKztrAkngcWPYX1EiC0E8bpI/edit#gid=0)
+[Link to Google Spreadsheet for this project.](https://docs.google.com/spreadsheets/d/1guQdTjGwhKVkvHQ8Tp4AKztrAkngcWPYX1EiC0E8bpI/edit#gid=0)
 
 ## Requirements
 
