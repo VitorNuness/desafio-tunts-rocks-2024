@@ -31,9 +31,9 @@ git remote add origin
 python script.py <client_key> <spreadsheet_id> <sheet_name>
 ```
 
-* <client_key>: Path to a JSON file containing Google Sheets API credentials.
-* <spreadsheet_id>: The Google Spreadsheet ID, localized in URL.
-* <sheet_name>: The name of sheet.
+* <client_key>: Path to a JSON file containing Google Sheets API credentials. [Help](#how-to-obtain-google-sheets-api-credentials)
+* <spreadsheet_id>: The Google Spreadsheet ID, localized in URL. [Help](#how-to-obtain-google-sheets-id-and-sheet-name)
+* <sheet_name>: The name of sheet. [Help](#how-to-obtain-google-sheets-id-and-sheet-name)
 
 ## Example
 
@@ -52,6 +52,18 @@ python script.py path/to/your/credentials.json yourspreadsheetid sheet_name
 4. Create credentials for the project, choosing "Service account key" as the credential type.
 5. Download the JSON file containing your credentials and specify its path when running the script.
 6. Share the Spreadsheet with account service e-mail.
+
+For more information, consult the docs: [Criar e excluir chaves de contas de serviço](https://cloud.google.com/iam/docs/keys-create-delete?hl=pt-br)
+
+## How to Obtain Google Sheets ID and sheet name
+
+The Spreadsheets Id is localized in the URL:
+
+![Spreadsheets Id](assets/spreadsheets-id.png)
+
+And the sheet  name in the tabs:
+
+![Sheets Name](assets/sheets-name.png)
 
 ## Script Details
 
