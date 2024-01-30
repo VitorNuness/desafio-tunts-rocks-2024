@@ -51,12 +51,13 @@ python script.py path/to/your/credentials.json yourspreadsheetid sheet_name
 3. Enable the Google Sheets API for the project.
 4. Create credentials for the project, choosing "Service account key" as the credential type.
 5. Download the JSON file containing your credentials and specify its path when running the script.
+6. Share the Spreadsheet with account service e-mail.
 
 ## Script Details
 
 The script performs the following actions:
 
-1. Reads data from a specified Google Spreadsheet (worksheet: 'engenharia_de_software').
+1. Reads data from a specified Google Spreadsheet.
 2. Analyzes student data, calculates their situation based on attendance and grades.
 3. Updates the student data with the calculated situation.
 4. Prints a message indicating the completion of the process.
@@ -67,4 +68,4 @@ This script assumes the existence of the google_client.py and student.py files c
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT [License](LICENSE).
