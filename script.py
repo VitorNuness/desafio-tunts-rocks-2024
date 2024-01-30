@@ -79,6 +79,7 @@ def main():
             student.calculate_average()
             student.calculate_percentual_absences(total_classes)
             student.calculate_situation()
+            print(student.average)
             student_row[6] = student.situation
             student_row[7] = student.final_situation
 

@@ -64,8 +64,9 @@ class Student:
         if len(self.grades) == 0:
             self.average = 0
             return self.average
-        
-        self.average = ceil(sum(self.grades) / (len(self.grades) + 1))
+        grandes_sum = sum(self.grades)
+        grades_total = len(self.grades)
+        self.average = ceil(grandes_sum / grades_total)
         return self.average
 
     def calculate_percentual_absences(self, classes_total: int) -> int:
@@ -94,7 +95,7 @@ class Student:
         elif self.average < 50:
             self.situation = Situation.GRADE_FAILED.value
             self.final_situation = 0
-        elif 5 <= self.average < 70:
+        elif 50 <= self.average < 70:
             self.situation = Situation.FINAL_EXAM.value
             self.final_situation = 100 - self.average
         else:
